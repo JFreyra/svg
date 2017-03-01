@@ -61,8 +61,11 @@ var drawDot = function(){
 
 var clearsvg = function(){
     while(img.lastChild){
-	img.remove(img.lastChild);
+	img.removeChild(img.lastChild);
     };
+    prevX = -1;
+    prevY = -1;
+
 };
 
 clear.addEventListener("click",clearsvg);
