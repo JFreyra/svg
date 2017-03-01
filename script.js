@@ -60,8 +60,8 @@ var drawDot = function(){
 }
 
 var clearsvg = function(){
-    for node in img{
-	img.removeChild(node);
+    while(img.lastChild){
+	img.remove(img.lastChild);
     };
 };
 
