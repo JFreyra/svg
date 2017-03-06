@@ -1,0 +1,8 @@
+create an html+js program with the following features:
+
+html file with an svg element and a clear button
+js fxn that will create and return a circle svg element
+js fxn that will call fxn above, then add the returned circle to the svg element
+attach this draw-circle fxn to the svg element
+js fxn that will clear an svg element
+attach the clear fxn to the clear button

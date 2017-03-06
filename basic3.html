@@ -1,0 +1,40 @@
+<!DOCTYPE: HTML>
+<html>
+  <head>
+    <style>
+      .d1{background-color:green;
+      position:relative;
+      width:150px; height:150px;
+      text-align:center; cursor:pointer;}
+      .d2{background-color:blue;
+      position:absolute;
+      top:25px; left:25px;
+      width:100px; height:100px}
+      .d3{background-color:red;
+      position:absolute;
+      top:25px; left:25px;
+      width:50px; height:50px;
+      line-height:50px;}
+    </style>
+  </head>
+
+  <header><title>SVG</title>
+  </header>
+  <body>
+    <h1>Triggered: 500px by 500px</h1>
+    
+    <div class="d1" onclick="highlight(this)">1
+      <div class="d2" onclick="highlight(this)">2
+	<div class="d3" onclick="highlight(this)">3
+	</div>
+      </div>
+    </div>
+
+    <script>
+      function highlight(e) {
+      alert(e.className);
+      event.stopPropagation();
+      };
+    </script>
+  </body>
+</html>
