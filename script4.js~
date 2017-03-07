@@ -1,0 +1,9 @@
+var highlight(e){
+    alert(e.className);
+    // event.stopPropagation();
+};
+
+var list = document.getElementsByTagName("li");
+for(var i = 0; i < list.length; i++){
+    list[i].addEventListener(list[i]);
+};
